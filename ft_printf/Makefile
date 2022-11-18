@@ -6,7 +6,7 @@
 #    By: mdo-carm <mdo-carm@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/30 14:02:54 by mdo-carm          #+#    #+#              #
-#    Updated: 2022/03/15 18:27:28 by mdo-carm         ###   ########.fr        #
+#    Updated: 2022/11/18 20:25:23 by mdo-carm         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,10 +27,10 @@ OBJ = $(C_SOURCE:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ) $(H_SOURCE)
+$(NAME): $(OBJ)
 		ar -rcs $(NAME) $(OBJ)
 
-%.o: %.c $(H_SOURCE)
+%.o: %.c
 		$(CC) $(C_FLAGS) -c $< -o $@
 
 clean: 

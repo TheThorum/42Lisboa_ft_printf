@@ -6,7 +6,7 @@
 /*   By: mdo-carm <mdo-carm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/30 14:03:11 by mdo-carm          #+#    #+#             */
-/*   Updated: 2022/03/23 22:17:41 by mdo-carm         ###   ########.fr       */
+/*   Updated: 2022/11/18 20:19:37 by mdo-carm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,8 @@ unsigned int	ft_prtchar(char args)
 unsigned int	ft_flag(const char *txt, va_list args)
 {
 	unsigned int	numchar;
-	int				i;
 
 	numchar = 0;
-	i = 0;
 	if (*txt == 'c')
 		numchar += ft_prtchar(va_arg(args, int));
 	if (*txt == 's')
